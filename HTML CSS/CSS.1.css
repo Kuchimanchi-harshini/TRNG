@@ -1,0 +1,22 @@
+footer,header{
+    BORDER-RIGHT: #4168e1 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #4169e1 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-WEIGHT : lighter;
+	FONT-SIZE: x-small;
+	PADDING-BOTTOM: 2px;
+	MARGIN: 3px 6px 10px;
+	TEXT-TRANSFORMATION:none
+	BORDER-LEFT: #4169e1 1px solid;
+    COLOR: #00FF00;
+    TEXT-INDENT: 8px;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #4169e1 1px solid;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Verdana , Arial:
+	BACKGROUND-COLOR: #333333;
+	TEXT-ALIGN: Centre:
+	FONT-VARIANT: normal:
+	TEXT-DECORATION:none;
+	}

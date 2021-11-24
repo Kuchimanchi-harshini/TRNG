@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Click the button to make a BUTTON element with text.</p>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+ var btn = document.createElement("BUTTON");
+ var t = document.createTextNode("CLICK ME");
+ btn.appendChild(t);
+ document.body.appendChild(btn); }
+</script>
+</body> </html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+<script>
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+parent.removeChild(child);
+</script>
+</body> 
+</html>

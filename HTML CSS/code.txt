@@ -1,0 +1,367 @@
+D:\ETGTRNG>git add GIT
+fatal: pathspec 'GIT' did not match any files
+
+D:\ETGTRNG>git add GIT
+
+D:\ETGTRNG>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GIT/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\ETGTRNG>git add GIT
+
+D:\ETGTRNG>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   GIT/READTEXT.txt
+
+
+D:\ETGTRNG>cd GIT
+
+D:\ETGTRNG\GIT>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   READTEXT.txt
+
+
+D:\ETGTRNG\GIT>git commit -m "READTEXT.txt created"
+[master (root-commit) 3c6189e] READTEXT.txt created
+ 1 file changed, 2 insertions(+)
+ create mode 100644 GIT/READTEXT.txt
+
+D:\ETGTRNG\GIT>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\ETGTRNG\GIT>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demo.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\ETGTRNG\GIT>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+D:\ETGTRNG\GIT>git add .
+
+D:\ETGTRNG\GIT>git commit -m "demo.pyt created"
+[master 7c526a0] demo.pyt created
+ 1 file changed, 2 insertions(+)
+ create mode 100644 GIT/demo.py
+
+D:\ETGTRNG\GIT>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\ETGTRNG\GIT>git log
+commit 7c526a07f58df31f58fa13a6c2fab476c72cf7ab (HEAD -> master)
+Author: harshini.k <harshini.k@sonata-software.com>
+Date:   Wed Nov 17 12:08:28 2021 +0530
+
+    demo.pyt created
+
+commit 3c6189e641545e319426b7ad45bd82ae97168e27
+Author: harshini.k <harshini.k@sonata-software.com>
+Date:   Wed Nov 17 12:05:24 2021 +0530
+
+    READTEXT.txt created
+
+D:\ETGTRNG\GIT>git diff
+
+D:\ETGTRNG\GIT>git log
+commit 7c526a07f58df31f58fa13a6c2fab476c72cf7ab (HEAD -> master)
+Author: harshini.k <harshini.k@sonata-software.com>
+Date:   Wed Nov 17 12:08:28 2021 +0530
+
+    demo.pyt created
+
+commit 3c6189e641545e319426b7ad45bd82ae97168e27
+Author: harshini.k <harshini.k@sonata-software.com>
+Date:   Wed Nov 17 12:05:24 2021 +0530
+
+    READTEXT.txt created
+
+D:\ETGTRNG\GIT>git log  --help
+
+D:\ETGTRNG\GIT>git log  --oneline
+7c526a0 (HEAD -> master) demo.pyt created
+3c6189e READTEXT.txt created
+
+D:\ETGTRNG\GIT>git diff 7c526a0..3c6189e
+diff --git a/GIT/demo.py b/GIT/demo.py
+deleted file mode 100644
+index 43a8831..0000000
+--- a/GIT/demo.py
++++ /dev/null
+@@ -1,2 +0,0 @@
+-import java.Lang
+-public main void (strings args[])
+\ No newline at end of file
+
+D:\ETGTRNG\GIT>git diff 7c526a0
+
+D:\ETGTRNG\GIT>git diff 3c6189e
+diff --git a/GIT/demo.py b/GIT/demo.py
+new file mode 100644
+index 0000000..43a8831
+--- /dev/null
++++ b/GIT/demo.py
+@@ -0,0 +1,2 @@
++import java.Lang
++public main void (strings args[])
+\ No newline at end of file
+
+D:\ETGTRNG\GIT>git diff HEAD..HEAD~1
+diff --git a/GIT/demo.py b/GIT/demo.py
+deleted file mode 100644
+index 43a8831..0000000
+--- a/GIT/demo.py
++++ /dev/null
+@@ -1,2 +0,0 @@
+-import java.Lang
+-public main void (strings args[])
+\ No newline at end of file
+
+D:\ETGTRNG\GIT>git show 3c6189e
+commit 3c6189e641545e319426b7ad45bd82ae97168e27
+Author: harshini.k <harshini.k@sonata-software.com>
+Date:   Wed Nov 17 12:05:24 2021 +0530
+
+    READTEXT.txt created
+
+diff --git a/GIT/READTEXT.txt b/GIT/READTEXT.txt
+new file mode 100644
+index 0000000..caaa7fd
+--- /dev/null
++++ b/GIT/READTEXT.txt
+@@ -0,0 +1,2 @@
++Line 1
++Line 2
+\ No newline at end of file
+
+D:\ETGTRNG\GIT>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\ETGTRNG\GIT>git checkout
+M       GIT/READTEXT.txt
+
+D:\ETGTRNG\GIT>git checkout READTEXT.txt
+Updated 1 path from the index
+
+D:\ETGTRNG\GIT>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\ETGTRNG\GIT>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+D:\ETGTRNG\GIT>git add .
+
+D:\ETGTRNG\GIT>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+        demo.exe
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\ETGTRNG\GIT>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\ETGTRNG\GIT>git checkout READTEXT.txt
+Updated 0 paths from the index
+
+D:\ETGTRNG\GIT>git reset --hard
+HEAD is now at 7c526a0 demo.pyt created
+
+D:\ETGTRNG\GIT>git clean -n
+
+D:\ETGTRNG\GIT>git clean -n
+Would remove Pic.jpg
+
+D:\ETGTRNG\GIT>git clean -f
+Removing Pic.jpg
+
+D:\ETGTRNG\GIT>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\ETGTRNG\GIT>git reset --hard
+HEAD is now at 7c526a0 demo.pyt created
+
+D:\ETGTRNG\GIT>git clean -n
+
+D:\ETGTRNG\GIT>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+        demo.exe
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\ETGTRNG\GIT>git reset --hard
+HEAD is now at 7c526a0 demo.pyt created
+
+D:\ETGTRNG\GIT>git clean -n
+Would remove .gitignore.txt
+Would remove demo.exe
+
+D:\ETGTRNG\GIT>git clean -f
+Removing .gitignore.txt
+Removing demo.exe
+
+D:\ETGTRNG\GIT>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\ETGTRNG\GIT>git add .
+
+D:\ETGTRNG\GIT>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore.txt
+        new file:   DEMO.exe
+
+
+D:\ETGTRNG\GIT>git remote
+
+D:\ETGTRNG\GIT>git remote add echo "# TRNG" >> README.md
+
+D:\ETGTRNG\GIT>git init
+Initialized empty Git repository in D:/ETGTRNG/GIT/.git/
+
+D:\ETGTRNG\GIT>git add README.md
+
+D:\ETGTRNG\GIT>git commit -m "first commit"
+[master (root-commit) 48d2f08] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+D:\ETGTRNG\GIT>git branch -M main
+
+D:\ETGTRNG\GIT>git remote add origin https://github.com/Kuchimanchi-harshini/TRNG.git
+
+D:\ETGTRNG\GIT>git remote add origin https://github.com/Kuchimanchi-harshini/TRNG.git
+error: remote origin already exists.
+
+D:\ETGTRNG\GIT>git remote -v
+origin  https://github.com/Kuchimanchi-harshini/TRNG.git (fetch)
+origin  https://github.com/Kuchimanchi-harshini/TRNG.git (push)
+
+D:\ETGTRNG\GIT>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Kuchimanchi-harshini/TRNG.git'
+D:\ETGTRNG\GIT>git remote add origin https://github.com/Kuchimanchi-harshini/TRNG.git
+error: remote origin already exists.
+
+D:\ETGTRNG\GIT>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 216.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Kuchimanchi-harshini/TRNG.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+
+D:\ETGTRNG\GIT>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Kuchimanchi-harshini/TRNG.git'
+
+D:\ETGTRNG\GIT>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Kuchimanchi-harshini/TRNG.git'
+
+D:\ETGTRNG\GIT>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Kuchimanchi-harshini/TRNG.git'
+
+D:\ETGTRNG\GIT>git remote -v
+origin  https://github.com/Kuchimanchi-harshini/TRNG.git (fetch)
+origin  https://github.com/Kuchimanchi-harshini/TRNG.git (push)
+
+D:\ETGTRNG\GIT>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Kuchimanchi-harshini/TRNG.git'
+
+D:\ETGTRNG\GIT>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Kuchimanchi-harshini/TRNG.git'
+
+D:\ETGTRNG\GIT>git remote add origin https://github.com/Kuchimanchi-harshini/TRNG.git
+error: remote origin already exists.
+
+D:\ETGTRNG\GIT>git branch -M main
+
+D:\ETGTRNG\GIT>git remote add origin https://github.com/Kuchimanchi-harshini/TRNG.git
+error: remote origin already exists.
+
+D:\ETGTRNG\GIT>git remote add origin https://github.com/Kuchimanchi-harshini/TRNG.git
+error: remote origin already exists.
+
+D:\ETGTRNG\GIT>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Kuchimanchi-harshini/TRNG.git'
+
+D:\ETGTRNG\GIT>git remote add origin https://github.com/Kuchimanchi-harshini/TRNG.git
+error: remote origin already exists.
+
+D:\ETGTRNG\GIT>git remote -v
+origin  https://github.com/Kuchimanchi-harshini/TRNG.git (fetch)
+origin  https://github.com/Kuchimanchi-harshini/TRNG.git (push)
+
+D:\ETGTRNG\GIT>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Kuchimanchi-harshini/TRNG.git'
+
+D:\ETGTRNG\GIT>git push origin masterecho "# TRNG" >> README.md
+fatal: invalid refspec '# TRNG'
+
+D:\ETGTRNG\GIT>git init
+Reinitialized existing Git repository in D:/ETGTRNG/GIT/.git/
+
+D:\ETGTRNG\GIT>git add README.md
+
+D:\ETGTRNG\GIT>git commit -m "first commit"
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+        DEMO.exe
+        READTEXT.txt
+        demo.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\ETGTRNG\GIT>git branch -M main
+
+D:\ETGTRNG\GIT>git remote add origin https://github.com/Kuchimanchi-harshini/TRNG.git
+error: remote origin already exists.

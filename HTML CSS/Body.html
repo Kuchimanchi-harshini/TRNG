@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+
+function checkWin() {
+  if (!myWindow) {
+    document.getElementById("msg").innerHTML = "'myWindow' has never been opened!";
+  } else {
+    if (myWindow.closed) {
+      document.getElementById("msg").innerHTML = "'myWindow' has been closed!";
+    } else {
+      document.getElementById("msg").innerHTML = "'myWindow' has not been closed!";
+    }
+  }
+}
+</script>
+</head>
+<body onLoad="loaded()">
+Hello Good Morning!
+</body>
+</html>
