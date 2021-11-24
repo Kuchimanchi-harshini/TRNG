@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  
+  <title>Math PI</title>
+  <meta charset="utf-8">
+  <script>
+function circle(radius)
+{
+    this.radius = radius;
+  // area method
+    this.area = function () 
+    {
+        return Math.PI * this.radius * this.radius;
+    };
+  // perimeter method
+    this.perimeter = function ()
+    {
+        return 2*Math.PI*this.radius;
+    };
+};
+
+</script>
+  </head>
+  <body>
+</body>
+  </html>
+  

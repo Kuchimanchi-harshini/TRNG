@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> alert </title>
+<body>
+</head>
+<script>
+function jumpto(x)
+{
+if (document.form1.jumpmenu.value != "null") {
+if (document.form1.jumpmenu.value != "https://www.javatpoint.com/") {
+alert('Finish Loading');
+}
+document.location.href = x
+}
+}
+</script>
+<form name="form1">
+<select name="jumpmenu"
+onChange="jumpto(document.form1.jumpmenu.options[document.form1.jumpmenu.options.selectedIndex].value)">
+<option>Jump to...</option>
+<option value="https://www.javatpoint.com/">Home</option>
+<option value="https://www.javatpoint.com/python-tutorial">PYTHON Tutorial</option>
+<option value="https://www.javatpoint.com/cpp-tutorial">C++ Tutorial</option>
+<option value="https://www.javatpoint.com/sql-tutorial">SQL Tutorial</option>
+</select>
+</form>
+</body>
+</html>

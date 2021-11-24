@@ -1,0 +1,20 @@
+<html>
+   <head>   
+     <head>
+<script type="text/javascript">
+document.onreadystatechange = function(){//window.addEventListener('readystatechange',function(){...}); (for Netscape) and window.attachEvent('onreadystatechange',function(){...}); (for IE and Opera) also work
+    if(document.readyState=='loaded' || document.readyState=='complete')
+        alert('Finish Loading');
+}
+alert('clicked on the button');	
+</script>
+</head>
+   
+   <body>
+      <p>Click the following button to see the result: </p>      
+      <form>
+         <input type = "button" value = "Click here" body onload="myFunction()"/>
+      </form>   
+  
+   </body>
+</html>

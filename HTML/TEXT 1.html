@@ -1,0 +1,26 @@
+<body>
+<button  type="button" id="btn" onclick="Createinput()"> + Add</button>
+<div id="TextAreaBtn"></div>
+
+<script>
+function addRow () {
+  document.querySelector('#content').insertAdjacentHTML(
+    'afterbegin',
+    `<div class="row">
+      <input type="text" name="name" value="" />
+      <input type="text" name="value" value="" />
+      <label><input type="checkbox" name="check" value="1" />Checked?</label>
+      <input type="button" value="-" onclick="removeRow(this)">
+    </div>`      
+  )
+}
+
+function removeRow (input) {
+  input.parentNode.remove()
+}
+<input type="button" value="+" onclick="addRow()">
+
+<div id="content">
+</div>
+</script>
+</body>
